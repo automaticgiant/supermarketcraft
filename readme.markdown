@@ -15,6 +15,8 @@ describe kata - https://www.youtube.com/watch?v=auavC2MGnMU
 
 #### system requirements - 10m
 where we describe the system requirments for practicing the exercise
+##### jdk
+- http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
 ##### install an ide
 - https://www.eclipse.org/downloads/eclipse-packages/
 - https://www.jetbrains.com/idea/download/
