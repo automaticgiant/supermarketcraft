@@ -15,16 +15,21 @@ describe kata - https://www.youtube.com/watch?v=auavC2MGnMU
 
 #### system requirements - 10m
 where we describe the system requirments for practicing the exercise
-##### jdk
-- http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
-##### install an ide
-- https://www.eclipse.org/downloads/eclipse-packages/
-- https://www.jetbrains.com/idea/download/
 ##### github account
 - https://github.com/join?source=header-home
 ##### fork repo
-or clone, or download zip if skipping travis/git
 - https://github.com/automaticgiant/supermarketcraft
+##### codenvy.io
+goto [codenvy.io](codenvy.io)
+- login with oauth (gh)
+- import from gh (reload a few times if don't see repos), select fork
+- java ready to go stack
+- create
+- profile->preferences->git->committer and fill out
+- profile->preferences->ssh->vcs->gh button
+- edit build command to have commandline be `clean compile test`
+- press play
+
 
 #### acceptance criteria - 5m
 where we describe the initial requirements required to exercise the driver
