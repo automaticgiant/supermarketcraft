@@ -1,0 +1,18 @@
+{
+  "name": "supermarketcraft",
+  "dependencies": {
+    "reveal-md": "^0.0.34"
+  },
+  "scripts": {
+    "start": "reveal-md readme.md",
+    "dev": "reveal-md -w --disableAutoOpen readme.md"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/automaticgiant/supermarketcraft.git"
+  },
+  "bugs": {
+    "url": "https://github.com/automaticgiant/supermarketcraft/issues"
+  },
+  "homepage": "https://github.com/automaticgiant/supermarketcraft#readme"
+}
