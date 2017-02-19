@@ -88,6 +88,7 @@ even though package managers are a thing, you can also go out and find and insta
 ###### git client
 - xcode cli comes with
 - can also use https://desktop.github.com/ or ide integration
+- https://git-scm.com/download/win
 
 ---
 
