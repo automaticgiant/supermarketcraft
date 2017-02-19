@@ -26,6 +26,71 @@ where we describe the system requirments for practicing the exercise
 
 ---
 
+##### osx
+use [homebrew](https://brew.sh/) ([requirements](http://docs.brew.sh/Installation.html)(more or less, xcode cli tools))
+```bash
+xcode-select --install # (don't "Get XCode")
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+brew update
+brew cask install java
+
+brew install git #optional - xcode cli includes a version
+brew cask install github-desktop #also optional
+
+brew cask install intellij-idea-ce
+# or
+brew cask install eclipse-java
+# or your favorite editor (vim, of course) and
+brew install maven
+```
+
+---
+
+##### windows
+use [chocolatey](https://chocolatey.org/install)
+```powershell
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
+iwr https://chocolatey.org/install.ps1 -UseBasicParsing | iex
+choco install jdk8
+
+choco install git
+#or
+choco install github
+
+choco install intellijidea-community
+# or
+choco install eclipse-java-neon
+# or your favorite editor (vim, of course)
+choco install maven
+```
+
+---
+
+##### linux
+you probably know what you're doing - godspeed
+
+---
+
+##### manual
+even though package managers are a thing, you can also go out and find and install the components yourself
+
+---
+
+###### jdk
+- http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
+
+---
+
+###### install an ide
+- https://www.eclipse.org/downloads/eclipse-packages/
+- https://www.jetbrains.com/idea/download/
+
+###### git client
+- xcode cli comes with
+- can also use https://desktop.github.com/ or ide integration
+
+---
+
 ##### github account
 - https://github.com/join?source=header-home
 
