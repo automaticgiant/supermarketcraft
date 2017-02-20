@@ -108,6 +108,9 @@ public class ShoppingCart {
      */
     public double printCartAndSubtotal() {
         double total = 0;
+        
+        System.out.println(items);
+        System.out.println(quantityMap.get("APPLE"));
 
         for (String item : items) {
             double price = calculate(item);
