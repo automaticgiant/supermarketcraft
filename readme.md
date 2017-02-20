@@ -160,7 +160,12 @@ Note: not necessary for this exercise until criteria met.
 ---
 
 ### hook up travis - 2m
-- https://travis-ci.org/
+- https://travis-ci.com/getting_started
+- sign in with github account
+- synchronize repositories
+- enable ci for supermarketcraft fork
+- will work on push
+
 talk about ci (don't forget to run tests, check pr automatically, don't build on broken code, history)
 
 talk about test coverage benefits (prevent brittle code, catch regressions, frees you to iterate, facilitates teamwork)
