@@ -5,11 +5,10 @@ import edu.vt.hokie.model.ShoppingCart;
 import org.junit.Before;
 import org.junit.Test;
 
+import static org.junit.Assert.*;
+
 import java.util.List;
 import java.util.Map;
-
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertFalse;
 
 /**
  * Created by lxc686 on 2/17/17.
@@ -26,8 +25,8 @@ public class ShoppingCartTest {
         cart = new ShoppingCart();
         cart.initializeItem("APPLE", 1);
         cart.initializeItem("ORANGE", 2);
-        cart.initializeItem("BANANA", 1);
-        cart.initializeItem("PEACH", 1);
+        cart.initializeItem("BANANA", 1.50);
+        cart.initializeItem("PEACH", 2.99);
 
         itemList = cart.getItems();
         quantityMap = cart.getQuantityMap();
@@ -77,15 +76,35 @@ public class ShoppingCartTest {
 
     @Test
     public void testCalculate() {
-        quantityMap.put("APPLE", 25);
-        quantityMap.put("ORANGE", 33);
-        quantityMap.put("BANANA", 43);
-        quantityMap.put("PEACH", 13);
-
-        saleMap.put("APPLE", SaleType.BOGO);
-        saleMap.put("ORANGE", SaleType.BOGOHO);
-        saleMap.put("BANANA", SaleType.THREE4TWO);
-
-        assertEquals((Double)cart.printCartAndSubtotal(), (Double)105.0);
+        quantityMap.put("APPLE", 5);
+        quantityMap.put("ORANGE", 3);
+        quantityMap.put("BANANA", 1);
+        quantityMap.put("PEACH", 1);
+        
+        assertEquals((Double)cart.printCartAndSubtotal(), (Double)15.49);
+    }
+    
+    @Test 
+    public void testCalculateBOGO() {
+    	// example of how to set a BOGO sale on item "APPLE"
+    	// saleMap.put("APPLE", SaleType.BOGO);
+    	
+    	assertTrue(true);
+    }
+    
+    @Test
+    public void testCalculateBOGOHO() {
+    	// example of how to set a BOGOHO sale on item "APPLE"
+    	// saleMap.put("APPLE", SaleType.BOGOHO);
+    	
+    	assertTrue(true);
+    }
+    
+    @Test
+    public void testCalculateThree4Two() {
+    	// example of how to set a BOGOHO sale on item "APPLE"
+    	// saleMap.put("APPLE", SaleType.THREE4TWO);
+    	
+    	assertTrue(true);
     }
 }

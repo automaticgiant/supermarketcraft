@@ -7,9 +7,6 @@ package edu.vt.hokie.model;
  */
 public class BOGOHOCalculator implements Calculator {
     public double calculate(int quantity, double price) {
-        int main = quantity / 2;
-        int remainder = quantity % 2;
-
-        return ((main + remainder) * price) + (main * (price / 2));
+        return quantity * price;
     }
 }

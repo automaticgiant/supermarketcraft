@@ -6,9 +6,6 @@ package edu.vt.hokie.model;
  */
 public class ThreeForTwoCalculator implements Calculator {
     public double calculate(int quantity, double price) {
-        int main = (quantity / 3) * 2;
-        int remainder = quantity % 3;
-
-        return (main + remainder) * price;
+    	return quantity * price; 
     }
 }
